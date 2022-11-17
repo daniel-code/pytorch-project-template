@@ -32,6 +32,9 @@
 │   │
 │   └── test.py         <- Scripts to predict single sample via trained models
 │
+├── shells              <- Base shells. 
+│   └── train.sh        <- Shells to run multiple training settings at once.
+│
 ├── {{ cookiecutter.module_name }}  <- Source code for use in this project.
 │   │
 │   ├── data            <- Scripts to download or generate data
