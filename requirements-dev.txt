@@ -1,0 +1,7 @@
+cookiecutter
+pytest
+
+# Optional
+pytorch
+pytorch-lightning
+mlflow
