@@ -20,7 +20,6 @@ requirements:
 	{% if "requirements.txt" == cookiecutter.dependency_file -%}
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
-	pre-commit install
 	{% elif "environment.yml" == cookiecutter.dependency_file -%}
 	conda env update --name $(PROJECT_NAME) --file environment.yml --prune
 	{% elif "Pipfile" == cookiecutter.dependency_file -%}
