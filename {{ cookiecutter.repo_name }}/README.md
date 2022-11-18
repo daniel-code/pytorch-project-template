@@ -4,7 +4,88 @@
 
 # Contents <!-- omit in toc -->
 
-- [Project Organization](#project-organization)
+1. [Usage](#usage)
+   1. [Setup](#setup)
+   2. [Training](#training)
+   3. [Evaluation](#evaluation)
+   4. [Test](#test)
+2. [Development](#development)
+   1. [Setup](#setup-1)
+3. [Project Organization](#project-organization)
+
+# Usage
+
+## Setup
+
+1. Environment variables.
+
+   ```commandline
+   cp .env.example .env
+   ```
+
+2. Requirements.
+
+   ```commandline
+   pip install -r requirements.txt
+   ```
+
+## Training
+
+Training model in commandline.
+
+1. Single setting.
+
+   ```commandline
+   python {{ cookiecutter.repo_name }}/scripts/train.py
+   ```
+
+2. Run shells
+
+   ```commandline
+   python {{ cookiecutter.repo_name }}/shells/train.sh
+   ```
+
+## Evaluation
+
+Evaluate model performance.
+
+```commandline
+python {{ cookiecutter.repo_name }}/scripts/evaluate.py
+```
+
+## Test
+
+Inference single sample.
+
+```commandline
+python {{ cookiecutter.repo_name }}/scripts/test.py
+```
+
+# Development
+
+## Setup
+
+1. Environment variables.
+
+   ```commandline
+   cp .env.example .env
+   ```
+
+2. Requirements.
+
+   ```commandline
+   pip install -r requirements.txt
+   ```
+
+   or
+
+   ```commandline
+   pip install -r requirements-dev.txt
+   ```
+
+3. Install git hook
+
+   If project use version control, use `pre-commit install` to install git hook.
 
 # Project Organization
 
