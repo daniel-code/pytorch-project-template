@@ -2,7 +2,6 @@ from pathlib import Path
 from subprocess import run, PIPE
 
 import pytest
-import chardet
 
 from conftest import bake_project, config_generator
 
