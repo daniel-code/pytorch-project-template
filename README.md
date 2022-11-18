@@ -14,9 +14,9 @@ _A primary project structure for pytorch work._
 
 1. Install cookiecutter
 
-```commandline
-pip install cookiecutter
-```
+   ```commandline
+   pip install cookiecutter
+   ```
 
 2. Create project based on template
     1. Use GitHub URL directly.
