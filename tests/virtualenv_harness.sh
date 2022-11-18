@@ -10,10 +10,10 @@ function finish {
         deactivate
     fi
 
-    if [ ! -z `which rmvirtualenv` ]; then
-        rmvirtualenv $PROJECT_NAME
-    elif [ ! -z `which rmvirtualenv.bat` ]; then
-        rmvirtualenv.bat $PROJECT_NAME
+    if [ ! -z `which virtualenv` ]; then
+        virtualenv $PROJECT_NAME
+    elif [ ! -z `which virtualenv.bat` ]; then
+        virtualenv.bat $PROJECT_NAME
     fi
 }
 trap finish EXIT
