@@ -80,7 +80,7 @@ def verify_files(root, config):
         ".gitignore",
         "README.md",
         "setup.py",
-        ".flake8",
+        "pyproject.toml",
         ".style.yapf",
         ".pre-commit-config.yaml",
 
