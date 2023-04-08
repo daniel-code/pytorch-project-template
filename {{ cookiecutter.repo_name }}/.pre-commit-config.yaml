@@ -4,13 +4,13 @@ repos:
     hooks:
       - id: yapf
         entry: bash -c 'yapf "$@"; git add -u' --
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.3
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    # Ruff version.
+    rev: 'v0.0.260'
     hooks:
-      - id: flake8
-        args: ['--config=.flake8']
+      - id: ruff
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: 'v4.4.0'
     hooks:
       - id: detect-private-key
       - id: check-added-large-files
